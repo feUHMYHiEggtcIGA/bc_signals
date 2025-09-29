@@ -3,10 +3,11 @@ use std::cmp::{
     Ordering::Equal,
 };
 
-use bc_utils_lg::types::structures::SRC;
+use bc_utils_lg::types::structures::{SRC_EL, SLICE_ARG};
+
 
 pub fn mm_coll<C>(
-    src: &[SRC<f64>],
+    src: &SLICE_ARG<SRC_EL<f64>>,
     key: &str,
     min_distance: &usize,
     max_distance: &usize,
